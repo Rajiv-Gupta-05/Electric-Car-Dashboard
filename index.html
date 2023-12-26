@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+        <div class="header2">
+            <nav>
+                <div class="brand">
+                    <img src="img/charg.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#" id="features">Features</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="station">
+                    <button>Find Station </button>
+                </div>
+            </nav>
+            <section>
+                <div class="content">
+                    <h1>Go Electric <br>Go EveryWhere</h1>
+                    <p>hello this the electric car designed by elon musk and all the thigs is also done by elon musk.</p>
+                    <button>Learn More</button>
+                </div>
+            </section>
+            <footer id="footer">
+                <li>Moter Power 130.7 bhp</li>
+                <li>Battery Capacity 30.2 KMH</li>
+                <li>Range 312 km</li>
+                <li>Charging Time 60 Min (0-80%)</li>
+                <li>Max Power 332.7 bhp</li>
+                <li>Max Range 330 km</li>
+            </footer>
+        </div>
+    </header>
+
+
+	<script>
+        const features = document.getElementById("features");
+        const footer = document.getElementById("footer");
+
+        features.addEventListener('click', ()=>{
+            footer.classList.toggle("footers");
+            features.classList.toggle("clicks");
+        })
+    </script>
+  </body>
+</html>
